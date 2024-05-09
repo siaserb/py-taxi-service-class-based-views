@@ -11,7 +11,7 @@
   <tbody>
     {% for driver in object_list %}
       <tr>
-        <td><a href="{% url 'taxi:drivers-detail' driver.pk %}">{{ driver.username }}</a></td>
+        <td><a href="{% url 'taxi:driver-detail' driver.pk %}">{{ driver.username }}</a></td>
         <td>{{ driver.license_number }}</td>
       </tr>
     {% endfor %}
